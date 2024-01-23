@@ -1,0 +1,1 @@
+int staticArray[5] = {1, 2, 3, 4, 5}; // Array of size 5, cannot be resized
