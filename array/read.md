@@ -1,3 +1,12 @@
+# Array
+
+```js
+
+const array = [1]; // Integer = 4 Bytes or 32 bits 
+
+```
+
+
 # Static array 
 - is a fixed-size data structure
 
