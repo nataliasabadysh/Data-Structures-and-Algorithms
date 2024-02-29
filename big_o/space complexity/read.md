@@ -3,8 +3,7 @@
 ## Constant space - O(1)
 - Most primitives: Boolean, numbers, undefined, null
 
-## String O(n)
-## Array(length), Obj(keys) - O(n)
+## String O(n), Array(length), Obj(keys) - O(n)
 
 ```js
 ar.length // 2 = space, but if 130 = another space 
@@ -23,10 +22,10 @@ Time: array.length
 ```js
 - Space: O(1)
 function sum(array){
-    let total = 0; // space: numbers 
+    let total = 0; //O(1) space: numbers 
 
-     // space: numbers
-    for (let index = 0; index < array.length; index++) { // Time: array.length
+     // O(1) space: numbers
+    for (let index = 0; index < array.length; index++) { // O(n) Time: array.length
         // Space: O(1)
         total += array[index];
     }
@@ -36,10 +35,10 @@ function sum(array){
 // VS 
 - Space: O(n)
 function double(array){
-    let newArray = []; // space: array
+    let newArray = []; // O(n) space: array
 
-     // Space: numbers
-    for (let index = 0; index < array.length; index++) { // Time: array.length
+     // O(1) Space: numbers
+    for (let index = 0; index < array.length; index++) { // O(n) Time: array.length
         // Space: O(n)
         newArray.push( 2 * array[index]);
     }
